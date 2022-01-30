@@ -1,0 +1,1 @@
+[{"remote_id":"prod-d5r7ckuyaf4j4","name":"bitcoin","description":"Share to store the information of the bitcoins","model":"marketplace","id":"6d96bdbc-f9b6-4a83-ac51-166f0fd77a2d","datasets":[{"event_id":"32c9c5901905b75037b1d482065087d3","bucket_name":"rag-test1","id":"376ffb8509d0350530c39d617f63e13b"}],"direction":"inbound"}]

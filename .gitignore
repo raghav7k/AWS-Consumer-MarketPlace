@@ -1,0 +1,41 @@
+HELP.md
+.mvn/
+bin/
+lib/OLD_aws_old-java-sdk-1.12.94_old.jar
+lib/aws-sdk-java-2.17.100.jar
+lib/aws-java-sdk-core-1.12.125.jar
+lib/discovery-api-1.0.jar
+mvnw.cmd
+mvnw
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
