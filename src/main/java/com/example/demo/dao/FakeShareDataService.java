@@ -40,24 +40,6 @@ public class FakeShareDataService implements ShareDao{
     }
 
     @Override
-    public List<Share> getShares() {
-
-        AwsBasicCredentials credentials = AwsBasicCredentials.create("AKIA4JCDUSJZI7HDUYG4", "YJYl8QaNtf7ZUMxR3CnZ00h2NJnKcBM7vzN+tvCT");
-        Region region = Region.US_WEST_2;
-        S3Client s3 = S3Client.builder().credentialsProvider(StaticCredentialsProvider.create(credentials))
-                .region(region)
-                .build();
-
-        DataExchangeClient dataExchangeClient = DataExchangeClient.create();
-        ListDataSetsRequest dataSetsRequest = ListDataSetsRequest.builder().origin("ENTITLED").maxResults(1).build();
-        ListDataSetsResponse listDataSetsResponse= dataExchangeClient.listDataSets(dataSetsRequest);
-
-        listDataSetsResponse.dataSets().stream().forEach(x -> System.out.println(x.id()));
-
-        return Shares;
-    }
-
-    @Override
     public Optional<Share> getShareById(UUID id) {
         return Shares.stream().filter(share -> share.getShare_id().equals(id)).findFirst();
     }
